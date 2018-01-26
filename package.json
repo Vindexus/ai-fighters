@@ -14,6 +14,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "mdlog": "^1.0.3",
-    "sleep": "^5.1.1"
+    "sleep": "^5.1.1",
+    "underscore": "^1.8.3"
   }
 }

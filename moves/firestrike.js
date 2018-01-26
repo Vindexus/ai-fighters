@@ -1,15 +1,12 @@
-const Move = require('../move');
+const Move = require('./move');
 
 class Firestrike extends Move {
   constructor (config = {}) {
-    const defaults = {
+    super({
       frequency: 5,
       damage: 10,
       name: 'Firestrike'
-    }
-
-    const stats = Object.assign(defaults, config);
-    super(stats);
+    }, config);
   }
 }
 

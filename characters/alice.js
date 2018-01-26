@@ -1,13 +1,11 @@
-const Character = require('../character');
+const Character = require('../lib/character');
 
 class Alice extends Character {
   constructor () {
     super({
-    startingHP: 20,
-    currentHP: 20,
+    startingHP: 50,
     name: 'Alice',
-    speed: [10, 20],
-    moves: ['basicattack', 'firestrike']
+    moves: ['evenseconds', 'basicattack', 'finalstrike']
   })
   }
 }

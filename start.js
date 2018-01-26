@@ -1,16 +1,16 @@
-const console = require('./console');
-const colors = require('colors');
+const colors  = require('colors');
 
-const Alice = require('./characters/alice');
-const Bob = require('./characters/bob');
+const console = require('./lib/helpers/console');
+const Battle  = require('./lib/battle');
+const Alice   = require('./characters/alice');
+const Bob     = require('./characters/bob');
 
 let player1 = new Alice();
 let player2 = new Bob();
 
 console.h1("START THE FIGHT");
 
-const battleConst = require('./battle');
-let battle = new battleConst(player1, player2);
+let battle = new Battle(player1, player2);
 
 battle.onEnd = function () {
   console.log('Winner is: ' + battle.getWinner().name.green.bold);

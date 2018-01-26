@@ -1,15 +1,12 @@
-const Move = require('../move');
+const Move = require('./move');
 
 class BasicAttack extends Move {
   constructor (config = {}) {
-    const defaults = {
-      frequency: 10,
+    super({
+      frequency: Move.frequencies.common,
       damage: [3,4],
       name: 'Basic Attack'
-    }
-
-    const stats = Object.assign(defaults, config);
-    super(stats);
+    }, config);
   }
 }
 
